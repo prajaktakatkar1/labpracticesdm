@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  studdb:
+    build: ./db
+
+  server:
+    build: ./backend
+    ports:
+      - 4000:4000
+
+ 
